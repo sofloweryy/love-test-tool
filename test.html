@@ -1,0 +1,448 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; min-height: 18.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="zh-CN"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;理想伴侣测试 - 专属链接&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 700px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 35px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 25px 80px rgba(0,0,0,0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.expired, .used {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 40px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #ff4757;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.expired h2, .used h2 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 28px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 35px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 26px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 6px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.progress-bar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #f0f0f0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 35px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.progress-fill {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, #667eea, #764ba2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: width 0.4s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 0%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.question {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: slideIn 0.5s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.question h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 19px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.options {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.option {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 18px 22px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 2px solid #e8e8e8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.option:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-color: #764ba2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #f8f9ff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateX(5px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.option.selected {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-color: #764ba2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 20px rgba(118, 75, 162, 0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 17px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 5px 20px rgba(118, 75, 162, 0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 8px 25px rgba(118, 75, 162, 0.4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.btn:disabled {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: #ddd;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: not-allowed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.result {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.result-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 70px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: bounce 2s infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes bounce {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>0%, 100% { transform: translateY(0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>50% { transform: translateY(-10px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.result-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 25px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 40px rgba(118, 75, 162, 0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.result-card h2 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 32px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tags {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>gap: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tag {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(255,255,255,0.25);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(10px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes slideIn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(20px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 失效提示 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="expired" id="expiredView" style="display: none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;🔗 链接已过期&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;该测试链接有效期为48小时，现已失效&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 10px; color: #666;"&gt;请联系卖家获取新链接&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 已使用提示 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="used" id="usedView" style="display: none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2&gt;⚠️ 链接已使用&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p&gt;该测试链接为一次性专属链接，不可重复使用&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p style="margin-top: 10px; color: #666;"&gt;请联系卖家获取新链接&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- 正常测试页面 --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="normalView" style="display: none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h1&gt;理想伴侣测试&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="badge" id="versionBadge"&gt;基础版&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="progress-bar"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="progress-fill" id="progressFill"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="question" id="questionContainer"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="btn" id="nextBtn" disabled&gt;下一题&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="result" id="resultContainer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="result-icon"&gt;💘&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="result-card"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h2 id="resultTitle"&gt;你的理想伴侣&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div id="resultContent"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="tags" id="resultTags"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p style="margin-top: 20px; color: #666;"&gt;测试结果仅供参考&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 全局变量</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let currentQuestionIndex = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let answers = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let currentVersion = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let currentUuid = '';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 1. 解析URL参数（链接唯一标识、版本、创建时间）</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const getUrlParams = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const params = new URLSearchParams(window.location.search);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>uuid: params.get('uuid'),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>version: params.get('version'), // basic:基础版(15题) pro:升级版(20题)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>createTime: params.get('createTime') // 创建时间戳</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 2. 验证链接有效性</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const validateLink = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const { uuid, createTime, version } = getUrlParams();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 缺少必要参数直接失效</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!uuid || !createTime || !version) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showView('expiredView');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 验证有效期（48小时 = 48*60*60*1000 = 172800000毫秒）</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const now = Date.now();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const createTimeMs = Number(createTime);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (now - createTimeMs &gt; 172800000) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showView('expiredView');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 通知生成器：链接已过期</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('testLinkExpired', JSON.stringify({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>version: version,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>uuid: uuid</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 验证是否已使用（本地存储标记）</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const usedKey = `test_used_${uuid}`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (localStorage.getItem(usedKey)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showView('usedView');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 验证通过，显示正常测试页面</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>showView('normalView');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('versionBadge').textContent = version === 'basic' ? '基础版' : '升级版';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>currentVersion = version;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>currentUuid = uuid;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 3. 切换显示视图</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const showView = (viewId) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>['expiredView', 'usedView', 'normalView'].forEach(id =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById(id).style.display = id === viewId ? 'block' : 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 4. 测试题库（基础版15题，升级版20题）</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const questionBank = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>basic: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你更希望伴侣的性格是？", options: ["外向开朗", "内敛沉稳", "动静皆宜"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你理想的约会方式是？", options: ["热闹的聚会", "安静的晚餐", "户外的冒险"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的哪个特质最吸引你？", options: ["幽默风趣", "温柔体贴", "有责任感"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你更看重伴侣的？", options: ["颜值", "才华", "三观"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "吵架时你希望伴侣？", options: ["主动道歉", "冷静沟通", "给彼此空间"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你能接受的异地恋时长？", options: ["1年内", "1-3年", "不接受异地"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的消费观更接近？", options: ["月光族", "精打细算", "适度消费"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望伴侣的星座偏向？", options: ["火象（白羊/狮子/射手）", "水象（巨蟹/天蝎/双鱼）", "土象（金牛/处女/摩羯）", "风象（双子/天秤/水瓶）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你理想的婚姻模式是？", options: ["男主外女主内", "共同打拼", "各自独立"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的MBTI更偏向？", options: ["E（外向）", "I（内向）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望伴侣的爱好？", options: ["文艺类", "运动类", "宅家类"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你能接受伴侣的缺点？", options: ["偶尔情绪化", "有点懒", "话少"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的职业更倾向？", options: ["稳定型", "挑战型", "自由型"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望的相处节奏？", options: ["天天黏在一起", "保持独立空间", "每周见2-3次"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的家庭观念？", options: ["传统型", "现代型", "佛系型"] }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>pro: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 基础版15题 + 5道进阶题</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你更希望伴侣的性格是？", options: ["外向开朗", "内敛沉稳", "动静皆宜"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你理想的约会方式是？", options: ["热闹的聚会", "安静的晚餐", "户外的冒险"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的哪个特质最吸引你？", options: ["幽默风趣", "温柔体贴", "有责任感"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你更看重伴侣的？", options: ["颜值", "才华", "三观"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "吵架时你希望伴侣？", options: ["主动道歉", "冷静沟通", "给彼此空间"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你能接受的异地恋时长？", options: ["1年内", "1-3年", "不接受异地"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的消费观更接近？", options: ["月光族", "精打细算", "适度消费"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望伴侣的星座偏向？", options: ["火象（白羊/狮子/射手）", "水象（巨蟹/天蝎/双鱼）", "土象（金牛/处女/摩羯）", "风象（双子/天秤/水瓶）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你理想的婚姻模式是？", options: ["男主外女主内", "共同打拼", "各自独立"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的MBTI更偏向？", options: ["E（外向）", "I（内向）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望伴侣的爱好？", options: ["文艺类", "运动类", "宅家类"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你能接受伴侣的缺点？", options: ["偶尔情绪化", "有点懒", "话少"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的职业更倾向？", options: ["稳定型", "挑战型", "自由型"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望的相处节奏？", options: ["天天黏在一起", "保持独立空间", "每周见2-3次"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的家庭观念？", options: ["传统型", "现代型", "佛系型"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的MBTI感知维度？", options: ["S（实感）", "N（直觉）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的MBTI判断维度？", options: ["T（思考）", "F（情感）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的MBTI生活方式？", options: ["J（判断）", "P（感知）"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "你希望伴侣的爱情观？", options: ["浪漫型", "实用型", "成长型"] },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>{ q: "伴侣的社交圈大小？", options: ["广泛", "小众", "极简"] }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 5. 随机星座+MBTI结果生成</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const generateResult = (answers, version) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const constellations = ["白羊座", "金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座", "摩羯座", "水瓶座", "双鱼座"];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const mbtiTypes = ["INTJ", "INTP", "INFJ", "INFP", "ISTJ", "ISTP", "ISFJ", "ISFP", "ENTJ", "ENTP", "ENFJ", "ENFP", "ESTJ", "ESTP", "ESFJ", "ESFP"];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 随机选一个星座+MBTI（模拟根据答案匹配）</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const randomConstellation = constellations[Math.floor(Math.random() * constellations.length)];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const randomMbti = mbtiTypes[Math.floor(Math.random() * mbtiTypes.length)];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const result = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>title: `${randomConstellation} + ${randomMbti}`,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>content: version === 'basic'<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>? `你的理想伴侣是${randomConstellation}(${randomMbti})，TA兼具温柔与独立，和你在性格上高度契合，是能陪你一起成长的灵魂伴侣。`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>: `你的理想伴侣是${randomConstellation}(${randomMbti})！</span></p>
+<p class="p1"><span class="s1">TA的核心特质：${randomMbti.charAt(0) === 'E' ? '外向开朗' : '内敛沉稳'} + ${randomMbti.charAt(2) === 'T' ? '理性果断' : '感性细腻'} + ${randomMbti.charAt(3) === 'J' ? '有规划' : '随遇而安'}。</span></p>
+<p class="p1"><span class="s1">${randomConstellation}的浪漫与${randomMbti}的性格完美结合，是最适合你的理想型。`,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tags: version === 'basic'<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>? [randomConstellation, randomMbti, "灵魂伴侣"]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>: [randomConstellation, randomMbti, "高度契合", "成长型", "专属匹配"]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return result;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 6. 测试流程逻辑</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 初始化测试</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const initTest = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const questions = questionBank[currentVersion];</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 渲染第一题</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderQuestion(questions[currentQuestionIndex]);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 更新进度条</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateProgress();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 渲染题目</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const renderQuestion = (question) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const container = document.getElementById('questionContainer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>container.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;${currentQuestionIndex + 1}. ${question.q}&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="options"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>${question.options.map((opt, idx) =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="option" data-index="${idx}"&gt;${opt}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`).join('')}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 选项点击事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.option').forEach(option =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>option.addEventListener('click', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// 清空之前的选中状态</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.querySelectorAll('.option').forEach(o =&gt; o.classList.remove('selected'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// 选中当前选项</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>option.classList.add('selected');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// 启用下一题按钮</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>document.getElementById('nextBtn').disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 更新进度条</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const updateProgress = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const total = questionBank[currentVersion].length;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const progress = ((currentQuestionIndex + 1) / total) * 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('progressFill').style.width = `${progress}%`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 下一题逻辑</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const handleNext = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const questions = questionBank[currentVersion];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 记录当前答案</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const selectedOption = document.querySelector('.option.selected');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (selectedOption) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>answers.push(selectedOption.dataset.index);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// 进入下一题或结果页</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>currentQuestionIndex++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (currentQuestionIndex &lt; questions.length) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>renderQuestion(questions[currentQuestionIndex]);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>updateProgress();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('nextBtn').disabled = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 完成测试，标记链接已使用</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem(`test_used_${currentUuid}`, '1');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 通知生成器：链接已核销</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('testLinkUsed', JSON.stringify({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>version: currentVersion,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>uuid: currentUuid</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 生成并显示结果</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const result = generateResult(answers, currentVersion);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('questionContainer').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('nextBtn').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('progressFill').style.display = 'none';</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const resultContainer = document.getElementById('resultContainer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>resultContainer.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('resultTitle').textContent = result.title;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('resultContent').textContent = result.content;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('resultTags').innerHTML = result.tags.map(tag =&gt; `&lt;div class="tag"&gt;${tag}&lt;/div&gt;`).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// 7. 初始化</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.onload = () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (validateLink()) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>initTest();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// 绑定下一题按钮事件</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('nextBtn').addEventListener('click', handleNext);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
